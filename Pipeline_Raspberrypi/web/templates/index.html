@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Convertisseur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --win:#EEF1F4; --panel:#FFFFFF; --panel2:#F5F7F9;
+    --border:#CDD1D6; --border2:#B0B8C1;
+    --txt:#1C2B3A; --txt2:#4A5568; --txt3:#8A95A3;
+    --green:#1D9E75; --green-l:#E8F7F2; --green-d:#0A5C42;
+    --gray-h:#E2E6EA;
+    --red:#C0392B; --red-l:#FDECEA;
+    --orange:#D68910; --orange-l:#FEF9E7;
+    --blue:#2471A3; --blue-l:#E8F1F8;
+    --amber:#B7770D;
+    --header:#0F6E56;
+    --header2:#0A5C42;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--win);font-family:'Inter',system-ui,sans-serif;color:var(--txt);height:100%;overflow:hidden}
+  #root{height:100vh;display:flex;flex-direction:column}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+  button{font-family:inherit}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:var(--panel2)}
+  ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:5px}
+  ::-webkit-scrollbar-thumb:hover{background:var(--txt3)}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="data.jsx"></script>
+<script type="text/babel" src="scada.jsx"></script>
+<script type="text/babel" src="curves.jsx"></script>
+<script type="text/babel" src="history.jsx"></script>
+<script type="text/babel" src="alarms.jsx"></script>
+<script type="text/babel" src="weather.jsx?v=2"></script>
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
